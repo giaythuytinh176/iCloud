@@ -1,0 +1,24 @@
+<fieldset>
+  <legend>Calculator</legend>
+  <div class="row-cols-6">
+    <input class="form-control" type="number" [(ngModel)]="firstNumber" placeholder="Nhap so thu 1">
+  </div>
+  <div class="row-cols-6">
+    <input class="form-control" type="number" [(ngModel)]="secondNumber" placeholder="Nhap so thu 2">
+  </div>
+
+  <input type="submit" (click)="calculator(addition)" [(ngModel)]="addition">
+  <input type="submit" (click)="calculator(subtraction)" [(ngModel)]="subtraction">
+  <input type="submit" (click)="calculator(multiplication)" [(ngModel)]="multiplication">
+  <input type="submit" (click)="calculator(division)" [(ngModel)]="division">
+
+  <div *ngIf="error" class="alert alert-danger">
+    Mot trong 2 ko phai la number
+  </div>
+
+  <div *ngIf="result && !error" style="color : red">
+    Ket qua cua phep tinh la :
+    {{ result }}
+  </div>
+
+</fieldset>

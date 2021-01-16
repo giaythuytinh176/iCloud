@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b42844e7-fb4e-4d56-ab13-b37988350311" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/untitled/fontSize/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/fontSize/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/fontSize/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/fontSize/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/typescript-demo/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/typescript-demo/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/typescript-demo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/typescript-demo/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/typescript-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/typescript-demo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/typescript-demo/src/exercise/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/typescript-demo/src/exercise/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/untitled/typescript-demo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iQ21VtHdmiFor77bNKD71VJSvE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -53,7 +49,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/untitled/typescript-demo/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/untitled/font-size-editor/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,6 +66,7 @@
       <workItem from="1610668056886" duration="329000" />
       <workItem from="1610715641951" duration="7754000" />
       <workItem from="1610750473313" duration="6953000" />
+      <workItem from="1610764164913" duration="14810000" />
     </task>
     <servers />
   </component>
@@ -96,6 +93,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1610766051555">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1610766051555" />
     <state width="2534" height="410" key="GridCell.Tab.0.bottom" timestamp="1610751477298">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
