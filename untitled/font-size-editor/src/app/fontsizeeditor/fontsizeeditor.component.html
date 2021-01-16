@@ -1,6 +1,3 @@
-
-
-
 <h2>Font size editor</h2>
 
 <div>
@@ -9,8 +6,29 @@
 </div>
 
 <p class="output" [style.fontSize.px]="fontSize">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam debitis, tempore error voluptatem explicabo ipsum?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam
+  debitis, tempore error voluptatem explicabo ipsum?
 </p>
-<input type="text" [(ngModel)]="user.name">
+<input type="text" [(ngModel)]="user.name" name="{{ user.name }}">
 
 {{ user.name }}
+
+
+<div>
+  <button (click)="dec()" title="smaller">-</button>
+  <button (click)="inc()" title="bigger">+</button>
+  <label [style.font-size.px]="size">FontSize: {{size}}px</label>
+</div>
+
+<div> Months :
+  <select [(ngModel)]="month">
+    <option *ngFor="let i of months">{{i}}</option>
+  </select>
+</div>
+
+{{ month }}
+
+
+<p *ngIf="is_available; then true_condition else false_condition"></p>
+<ng-template #true_condition><p>Điều kiện đúng</p></ng-template>
+<ng-template #false_condition><p>Điều kiện sai</p></ng-template>
