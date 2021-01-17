@@ -124,19 +124,17 @@
 // // do not combine sync operations with async/await
 (function () {
     let x = 0;
-
     async function r5() {
         x += 1;
         console.log(x);
         return 5;
     }
-
     (async () => {
         x += await r5();
         console.log(x);
     })();
 })();
-//
+// Ket qua ra 1,5
 // fixed version
 (() => {
   let x = 0;
@@ -151,6 +149,7 @@
     console.log(x);
   })();
 })();
+// Ket qua ra 1,6
 //
 // // Too Sequential
 // async function fetchAllBook() {
