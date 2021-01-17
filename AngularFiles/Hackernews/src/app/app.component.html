@@ -4,16 +4,36 @@
 <!--<textarea [value]="article.title" cols="70" id="article-title"></textarea>-->
 <!--<textarea [value]="article.url" cols="70" id="article-url"></textarea>-->
 <!--<input (click)="updateArticle()" type="button" value="Update">-->
-<textarea [(ngModel)]="article.title" cols="70">{{ article.title }}</textarea>
-<textarea [(ngModel)]="article.url" cols="70">{{ article.url }}</textarea>
-<br>
-{{ article.title }}
-<br>
-{{ article.url }}
+<!--<label>-->
+<!--  <textarea [(ngModel)]="article.title" cols="70">{{ article.title }}</textarea>-->
+<!--</label>-->
+<!--<label>-->
+<!--  <textarea [(ngModel)]="article.url" cols="70">{{ article.url }}</textarea>-->
+<!--</label>-->
 
-<hr>
-<div>
-  <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+<div *ngIf="articles">
+  <div *ngFor="let art of articles">
+    <a *ngIf="art" href="{{art.url}}" target="_blank">{{art.title}}</a>
+    <input *ngIf="art" type="submit" value="Delete" (click)="removeArticle(art)">
+  </div>
 </div>
+<div *ngIf="articles.length == 0" style="color: red;">Not found article.</div>
+<hr>
+<label for="">Title</label>
+<input class="form-control" type="text" [(ngModel)]="title" autocomplete="on">
+<label for="">Url</label>
+<input class="form-control" type="text" [(ngModel)]="url" autocomplete="on">
+<input type="submit" value="Add" (click)="addArticle()">
+
+<!--<hr>-->
+<!--<br>-->
+<!--{{ article.title }}-->
+<!--<br>-->
+<!--{{ article.url }}-->
+
+<!--<hr>-->
+<!--<div>-->
+<!--  <a href="{{article.url}}" target="_blank">{{article.title}}</a>-->
+<!--</div>-->
 <hr>
 @CodeGym, 2019

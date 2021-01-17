@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b42844e7-fb4e-4d56-ab13-b37988350311" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,8 @@
       <workItem from="1610668056886" duration="329000" />
       <workItem from="1610715641951" duration="7754000" />
       <workItem from="1610750473313" duration="6953000" />
-      <workItem from="1610764164913" duration="14810000" />
+      <workItem from="1610764164913" duration="14879000" />
+      <workItem from="1610804920203" duration="4941000" />
     </task>
     <servers />
   </component>
@@ -77,6 +77,7 @@
         <option value="$PROJECT_DIR$/untitled/typescript-demo/src/promise.js" />
         <option value="$PROJECT_DIR$/untitled/typescript-demo/src/array.js" />
         <option value="$PROJECT_DIR$/untitled/typescript-demo/src/exercise/index.js" />
+        <option value="$PROJECT_DIR$/c0920k1.js" />
       </list>
     </option>
   </component>
@@ -93,10 +94,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1610766051555">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1610813113046">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1610766051555" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1610813113046" />
     <state width="2534" height="410" key="GridCell.Tab.0.bottom" timestamp="1610751477298">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
