@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontsizeeditorComponent } from './fontsizeeditor/fontsizeeditor.component';
 import { PetComponentComponent } from './pet-component/pet-component.component';
-import {FormsModule} from "@angular/forms";
 import { PetComponent } from './pet/pet.component';
 import { AwesomeCalculatorComponent } from './awesome-calculator/awesome-calculator.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { AwesomeCalculatorComponent } from './awesome-calculator/awesome-calcula
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     FormsModule,
     FormsModule
   ],

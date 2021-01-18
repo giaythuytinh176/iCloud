@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95104e95-3481-4550-a18f-19581e56cebe" name="Default Changelist" comment="" />
+    <list default="true" id="95104e95-3481-4550-a18f-19581e56cebe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/add-article/add-article.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/article/article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/article/article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/article/article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularFiles/Hackernews/src/app/article/article.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1n43tfHTIGdXJ4OG73uuT3ONCup" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,9 +28,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,10 +47,21 @@
       <option name="presentableId" value="Default" />
       <updated>1610635752565</updated>
       <workItem from="1610635754151" duration="17000" />
+      <workItem from="1610934188654" duration="3683000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="229" y="86" key="SettingsEditor" timestamp="1610937862028">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1610937862028" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1610935630029">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1610935630029" />
   </component>
 </project>

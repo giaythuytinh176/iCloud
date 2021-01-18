@@ -1,5 +1,5 @@
 <h2>Today's article</h2>
-
+<!--; else noTitle-->
 <div *ngIf="addarticle.articles_list">
   <div *ngFor="let art of addarticle.articles_list">
     <a *ngIf="art" href="{{art.url}}" target="_blank">{{art.title}}</a> &nbsp;  <app-likes></app-likes>&nbsp;
@@ -11,7 +11,7 @@
   </div>
 </div>
 
-
+<!--<ng-template #noTitle> Click on the button to see time. </ng-template>-->
 
 <div *ngIf="addarticle.articles_list.length == 0" style="color: red;">Not found article.</div>
 <hr>

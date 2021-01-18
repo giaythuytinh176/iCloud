@@ -4,7 +4,6 @@
   padding: 10px;
   border: 1px dotted silver;
 }
-
 .product:hover {
   color: red;
   cursor: pointer;

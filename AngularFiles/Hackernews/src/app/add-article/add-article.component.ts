@@ -1,16 +1,17 @@
-import {Component, OnInit} from '@angular/core';
-import {ArticleComponent} from "../article/article.component";
+import {Component, Input, OnInit} from '@angular/core';
+import {ArticleComponent} from '../article/article.component';
 
 @Component({
   selector: 'app-add-article',
   templateUrl: './add-article.component.html',
   styleUrls: ['./add-article.component.css'],
+  providers: [ArticleComponent,],
 })
 export class AddArticleComponent implements OnInit {
-
-  title: string = "";
-  url: string = "";
-  error: string | boolean = "";
+  // tslint:disable-next-line:no-input-rename
+  title: string = '';
+  url: string = '';
+  error: string | boolean = '';
 
   articles_list = [
     {
@@ -35,6 +36,10 @@ export class AddArticleComponent implements OnInit {
     }
   ];
 
+  validate() {
+
+  }
+
   removeArticle(art: any) {
     if (window.confirm('Are sure you want to delete this item ?')) {
       for (const i in this.articles_list) {
@@ -57,21 +62,21 @@ export class AddArticleComponent implements OnInit {
       url: this.url
     };
     if (!this.title || !this.url) {
-      this.error = "Title or Url can not empty";
+      this.error = 'Title or Url can not empty';
       return false;
     }
     for (const value of this.articles_list) {
       if (JSON.stringify(value) === JSON.stringify(article)) {
-        this.error = "Title, Url are duplicated.";
+        this.error = 'Title, Url are duplicated.';
         return false;
       }
     }
     if (!this.articles.validURL(this.url) && this.error !== false) {
-      this.error = "Url is invalid.";
+      this.error = 'Url is invalid.';
       return false;
     }
     if (this.error !== false) {
-      this.error = "";
+      this.error = '';
     }
     this.articles_list.push(article);
     //console.log(this);

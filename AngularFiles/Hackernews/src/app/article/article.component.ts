@@ -6,6 +6,12 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./article.component.css'],
 })
 export class ArticleComponent implements OnInit {
+  // titleX = 'Điện Thoại';
+
+  constructor() {
+  }
+  // tslint:disable-next-line:prefer-const
+
   // article: object = {
   //   title: 'The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await',
   //   url: 'https://medium.freecodecamp.org/the-evolution-of-async-javascript-from-callbacks-to-promises-to-async-await-e73b047f2f40'
@@ -17,6 +23,7 @@ export class ArticleComponent implements OnInit {
   //   this.article.url = document.getElementById('article-url').value;
   // }
 
+
   validURL(str: string) {
     var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
       '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
@@ -25,9 +32,6 @@ export class ArticleComponent implements OnInit {
       '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
       '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
     return pattern.test(str);
-  }
-
-  constructor() {
   }
 
   ngOnInit(): void {

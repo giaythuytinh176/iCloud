@@ -48,7 +48,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/untitled/typescript-demo/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/untitled/font-size-editor/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,7 +67,14 @@
       <workItem from="1610750473313" duration="6953000" />
       <workItem from="1610764164913" duration="14879000" />
       <workItem from="1610804920203" duration="4941000" />
+<<<<<<< HEAD
       <workItem from="1610856452816" duration="17845000" />
+=======
+      <workItem from="1610856452816" duration="17563000" />
+      <workItem from="1610945133752" duration="921000" />
+      <workItem from="1610951650008" duration="3560000" />
+      <workItem from="1610955735300" duration="2141000" />
+>>>>>>> 825744be8816e6ce4808c9ea2e15a18ba2f53f84
     </task>
     <servers />
   </component>
@@ -103,21 +110,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1610813113046" />
-    <state width="2534" height="410" key="GridCell.Tab.0.bottom" timestamp="1610751477298">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1610932746975">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1610932746975" />
     <state width="2534" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1610751477298" />
-    <state width="2534" height="410" key="GridCell.Tab.0.center" timestamp="1610751477297">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1610932746974">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1610932746974" />
     <state width="2534" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1610751477297" />
-    <state width="2534" height="410" key="GridCell.Tab.0.left" timestamp="1610751477296">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1610932746973">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1610932746973" />
     <state width="2534" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1610751477296" />
-    <state width="2534" height="410" key="GridCell.Tab.0.right" timestamp="1610751477298">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1610932746975">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1610932746975" />
     <state width="2534" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1610751477298" />
     <state x="679" y="268" key="SettingsEditor" timestamp="1610722214430">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -127,5 +138,19 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="861" y="342" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1610878843297" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1610952288412">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1610952288412" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/AngularFiles/dienthoai/src/app/product-detail/product-detail.component.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
