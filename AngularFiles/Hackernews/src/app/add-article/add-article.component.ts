@@ -5,7 +5,6 @@ import {ArticleComponent} from "../article/article.component";
   selector: 'app-add-article',
   templateUrl: './add-article.component.html',
   styleUrls: ['./add-article.component.css'],
-  providers: [ArticleComponent,]
 })
 export class AddArticleComponent implements OnInit {
 
