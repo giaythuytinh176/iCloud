@@ -12,14 +12,12 @@ import {Product, Products} from './data.products';
       </li>
     </ul>
     <div *ngIf="selectedProduct">
-      <p style="color : red;">
-        Có chọn một sản phẩm: {{ selectedProduct.nameproduct }}
-        <app-product-detail
-          [product] = "selectedProduct"
-          [title]="selectedProduct.nameproduct"
-          (dathangEvent)="notifyMessage($event)">
-        </app-product-detail>
-      </p>
+      <p>Có chọn một sản phẩm</p>
+      <app-product-detail
+        [product]="selectedProduct"
+        [title]="selectedProduct.nameproduct"
+        (dathangEvent)="notifyMessage($event)">
+      </app-product-detail>
     </div>
   `,
   styleUrls: ['./app.component.css']
@@ -28,16 +26,15 @@ export class AppComponent {
   products: Product[] = Products;
   title = 'Điện Thoại';
   selectedProduct?: Product;
-  mgs?:string;
+  mgs?: string;
 
   setSelectProduct(p: Product) {
     this.selectedProduct = p;
-    //alert(1111);
-    //console.log(Products);
-
   }
 
-  notifyMessage($event: { nameproduct: string; }) {
+  notifyMessage($event: { nameproduct: string | undefined; }) {
+    console.log($event);
     this.mgs = 'Có yêu cầu đặt hàng ' + $event.nameproduct;
   }
+
 }

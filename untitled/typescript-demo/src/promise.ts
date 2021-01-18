@@ -122,6 +122,22 @@
 
 //
 // // do not combine sync operations with async/await
+
+
+// async function a() {
+//     await demo();
+//
+//
+// }
+//
+// function demo() {
+//     setTimeout(function () {
+//         console.log(4444);
+//     }, 5000)
+// }
+// a();
+
+
 (function () {
     let x = 0;
     async function r5() {
@@ -150,7 +166,7 @@
   })();
 })();
 // Ket qua ra 1,6
-//
+
 // // Too Sequential
 // async function fetchAllBook() {
 //   await new Promise(resolve => {
