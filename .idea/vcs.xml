@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/AngularFiles" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/untitled" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/untitled/fontSize" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/untitled/typescript-demo" vcs="Git" />
   </component>
 </project>

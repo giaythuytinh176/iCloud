@@ -14,9 +14,10 @@ export class ProductDetailComponent implements OnInit {
   @Input('title') titlebox: string | undefined;
   @Output() dathangEvent = new EventEmitter<Product>();
 
+  // tslint:disable-next-line:typedef
   yeucaudathang() {
-    this.dathangEvent.emit(this.product);    //Phát sự kiện - có kèm dữ liệu this.product
-    //console.log(this.product);
+    this.dathangEvent.emit(this.product);    // Phát sự kiện - có kèm dữ liệu this.product
+    // console.log(this.product);
   }
 
   constructor() { }
