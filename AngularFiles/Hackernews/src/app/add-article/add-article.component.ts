@@ -90,12 +90,20 @@ export class AddArticleComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  removeArticle(art: any): void {
+  // removeArticle(art: any): void {
+  removeArticle(id: number): void {
     if (window.confirm('Are sure you want to delete this item ?')) {
       for (const i in this.articles_list) {
         // tslint:disable-next-line:triple-equals
-        if (this.articles_list[i] == art) {
-          this.articles_list.splice(Number(i), 1);
+        // if (this.articles_list[i] == art) {
+        //   this.articles_list.splice(Number(i), 1);
+        //   break;
+        // }
+        // @ts-ignore
+        if (Number(i) === Number(id)) {
+          // console.log(Number(id));
+          // console.log(Number(i));
+          this.articles_list.splice(Number(id), 1);
           break;
         }
       }

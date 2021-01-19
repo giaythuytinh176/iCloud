@@ -7,7 +7,7 @@
     <input *ngIf="art" type="submit" class="btn btn-success" value="Edit"
            (click)="addarticle.editArticle(art, index)">
     &nbsp;
-    <input *ngIf="art" type="submit" class="btn btn-danger" value="Delete" (click)="addarticle.removeArticle(art)">
+    <input *ngIf="art" type="submit" class="btn btn-danger" value="Delete" (click)="addarticle.removeArticle(index)">
 
   </div>
   <div style="color: #ff0000;" *ngIf="addarticle.error">
