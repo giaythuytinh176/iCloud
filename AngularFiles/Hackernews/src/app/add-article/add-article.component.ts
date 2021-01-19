@@ -3,7 +3,10 @@ import {ArticleComponent} from '../article/article.component';
 
 @Component({
   selector: 'app-add-article',
-  templateUrl: './add-article.component.html',
+  // templateUrl: './add-article.component.html',
+  template: `
+    <h2>{{titleX}}</h2>
+  `,
   styleUrls: ['./add-article.component.css'],
   providers: [ArticleComponent,],
 })
@@ -12,6 +15,7 @@ export class AddArticleComponent implements OnInit {
   title: string = '';
   url: string = '';
   error: string | boolean = '';
+  @Input() titleX : any = 'Điện Tasdasdhoại';
 
   articles_list = [
     {

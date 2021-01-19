@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Component} from '@angular/core';
 import {Product, Products} from './data.products';
 
@@ -36,5 +37,4 @@ export class AppComponent {
     console.log($event);
     this.mgs = 'Có yêu cầu đặt hàng ' + $event.nameproduct;
   }
-
 }

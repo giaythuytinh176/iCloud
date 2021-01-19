@@ -2,11 +2,37 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-article',
-  templateUrl: './article.component.html',
+  template: `
+    <h2>Today's article</h2>
+    <!--; else noTitle-->
+    <div *ngIf="addarticle.articles_list && addarticle.articles_list.length !== 0; else notfoundArticle">
+      <div *ngFor="let art of addarticle.articles_list">
+        <a *ngIf="art" href="{{art.url}}" target="_blank">{{art.title}}</a> &nbsp;  <app-likes></app-likes>&nbsp;
+        <input *ngIf="art" type="submit" class="btn btn-danger" value="Delete" (click)="addarticle.removeArticle(art)">
+
+      </div>
+      <div style="color: #ff0000;" *ngIf="addarticle.error">
+        {{ addarticle.error }}
+      </div>
+    </div>
+
+
+    <ng-template #notfoundArticle> <div *ngIf="addarticle.articles_list.length == 0" style="color: red;">Not found article.</div>
+    </ng-template>
+
+    <hr>
+    <label>Title</label>
+    <input class="form-control" type="text" [(ngModel)]="addarticle.title" autocomplete="on">
+    <label>Url</label>
+    <input class="form-control" type="text" [(ngModel)]="addarticle.url" autocomplete="on">
+    <input type="submit" value="Add" (click)="addarticle.addArticle()">
+
+    <app-add-article [titleX]="test" #addarticle></app-add-article>
+  `,
   styleUrls: ['./article.component.css'],
 })
-export class ArticleComponent implements OnInit {
-  // titleX = 'Điện Thoại';
+export class ArticleComponent implements OnInit  {
+  test = "sdddddasdfsadsđ";
 
   constructor() {
   }
@@ -24,6 +50,14 @@ export class ArticleComponent implements OnInit {
   // }
 
 
+  ngOnInit() {
+    console.log("on init");
+  }
+
+  ngOnDestroy() {
+    console.log("on Destroy");
+  }
+
   validURL(str: string) {
     var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
       '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
@@ -34,7 +68,5 @@ export class ArticleComponent implements OnInit {
     return pattern.test(str);
   }
 
-  ngOnInit(): void {
-  }
 
 }
