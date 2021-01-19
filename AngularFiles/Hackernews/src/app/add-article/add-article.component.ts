@@ -66,18 +66,19 @@ export class AddArticleComponent implements OnInit {
         // console.log(this.index);
         // @ts-ignore
         // console.log(this.articles_list[this.index]);
-        this.articles_list.splice(Number(this.index), 1);
+        //this.articles_list.splice(Number(this.index), 1);
         const article = {
           title: this.title,
           url: this.url
         };
-        for (const value of this.articles_list) {
-          if (JSON.stringify(value) === JSON.stringify(article)) {
-            this.error = 'Title, Url are duplicated.';
-            return false;
-          }
-        }
-        this.articles_list.splice(Number(this.index), 0, article);
+        this.articles_list.splice(this.index, 1, article);
+        // for (const value of this.articles_list) {
+        //   if (JSON.stringify(value) === JSON.stringify(article)) {
+        //     this.error = 'Title, Url are duplicated.';
+        //     return false;
+        //   }
+        // }
+        // this.articles_list.splice(Number(this.index), 0, article);
         // this.articles_list[Number(this.index)] = {
         //   title: this.title,
         //   url: this.url
