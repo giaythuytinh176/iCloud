@@ -15,9 +15,13 @@ export class AddArticleComponent implements OnInit {
   title: string = '';
   url: string = '';
   error: string | boolean = '';
-  @Input() titleX : any = 'Điện Tasdasdhoại';
+  @Input() titleX: any = 'Điện Tasdasdhoại';
+  // tslint:disable-next-line:variable-name
+  selectedProduct: boolean = false;
+  index = -1;
 
-  articles_list = [
+  // tslint:disable-next-line:variable-name
+  articles_list: Array<any> = [
     {
       title: 'The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await',
       url: 'https://medium.freecodecamp.org/the-evolution-of-async-javascript-from-callbacks-to-promises-to-async-await-e73b047f2f40'
@@ -40,28 +44,60 @@ export class AddArticleComponent implements OnInit {
     }
   ];
 
-  validate() {
+  // tslint:disable-next-line:typedef
+  editArticle(art: any, index: number): void {
+    this.title = art.title;
+    this.url = art.url;
+    this.selectedProduct = true;
+    this.index = index;
+    // this.articles_list.title = art.title;
+    // this.articles_list.url = art.url;
+  }
+
+  updateArticle(): void {
+    // tslint:disable-next-line:forin
+    for (const ind in this.articles_list) {
+      // console.log(ind);
+      // console.log(this.index);
+      // @ts-ignore
+      if (Number(ind) === Number(this.index)) {
+        // console.log(ind);
+        // console.log(this.index);
+        // @ts-ignore
+        //console.log(this.articles_list[this.index]);
+        this.articles_list.splice(Number(this.index), 1);
+        const article = {
+          title: this.title,
+          url: this.url
+        };
+        this.articles_list.splice(Number(this.index), 0, article);
+        // this.articles_list[Number(this.index)] = {
+        //   title: this.title,
+        //   url: this.url
+        // };
+        break;
+      }
+    }
 
   }
 
-  removeArticle(art: any) {
+  // tslint:disable-next-line:typedef
+  removeArticle(art: any): void {
     if (window.confirm('Are sure you want to delete this item ?')) {
       for (const i in this.articles_list) {
+        // tslint:disable-next-line:triple-equals
         if (this.articles_list[i] == art) {
-          //delete this.articles[i];
-          //console.log(this);
-          // @ts-ignore
           this.articles_list.splice(Number(i), 1);
+          break;
         }
-        //console.log(this.articles.length);
       }
-      //console.log(art);
     }
   }
 
   // @ts-ignore
+  // tslint:disable-next-line:typedef
   addArticle() {
-    var article = {
+    const article = {
       title: this.title,
       url: this.url
     };
@@ -83,7 +119,7 @@ export class AddArticleComponent implements OnInit {
       this.error = '';
     }
     this.articles_list.push(article);
-    //console.log(this);
+    // console.log(this);
   }
 
   constructor(private articles: ArticleComponent) {

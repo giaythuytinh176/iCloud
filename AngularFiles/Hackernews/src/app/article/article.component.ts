@@ -4,10 +4,14 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-article',
   template: `
     <h2>Today's article</h2>
-    <!--; else noTitle-->
     <div *ngIf="addarticle.articles_list && addarticle.articles_list.length !== 0; else notfoundArticle">
-      <div *ngFor="let art of addarticle.articles_list">
-        <a *ngIf="art" href="{{art.url}}" target="_blank">{{art.title}}</a> &nbsp;  <app-likes></app-likes>&nbsp;
+      <div *ngFor="let art of addarticle.articles_list; let index = index">
+        <a *ngIf="art" href="{{art.url}}" target="_blank">{{art.title}}</a> &nbsp;
+        <app-likes></app-likes>
+        &nbsp;
+        <input *ngIf="art" type="submit" class="btn btn-success" value="Edit"
+               (click)="addarticle.editArticle(art, index)">
+        &nbsp;
         <input *ngIf="art" type="submit" class="btn btn-danger" value="Delete" (click)="addarticle.removeArticle(art)">
 
       </div>
@@ -17,7 +21,8 @@ import {Component, OnInit} from '@angular/core';
     </div>
 
 
-    <ng-template #notfoundArticle> <div *ngIf="addarticle.articles_list.length == 0" style="color: red;">Not found article.</div>
+    <ng-template #notfoundArticle>
+      <div *ngIf="addarticle.articles_list.length == 0" style="color: red;">Not found article.</div>
     </ng-template>
 
     <hr>
@@ -26,16 +31,18 @@ import {Component, OnInit} from '@angular/core';
     <label>Url</label>
     <input class="form-control" type="text" [(ngModel)]="addarticle.url" autocomplete="on">
     <input type="submit" value="Add" (click)="addarticle.addArticle()">
+    <input type="submit" value="Update" (click)="addarticle.updateArticle()">
 
     <app-add-article [titleX]="test" #addarticle></app-add-article>
   `,
   styleUrls: ['./article.component.css'],
 })
-export class ArticleComponent implements OnInit  {
-  test = "sdddddasdfsadsđ";
+export class ArticleComponent implements OnInit {
+  test = 'sdddddasdfsadsđ';
 
   constructor() {
   }
+
   // tslint:disable-next-line:prefer-const
 
   // article: object = {
@@ -51,7 +58,7 @@ export class ArticleComponent implements OnInit  {
 
 
   ngOnInit() {
-    console.log("on init");
+    console.log('on init');
   }
 
   ngOnDestroy() {
