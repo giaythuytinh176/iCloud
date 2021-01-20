@@ -30,7 +30,7 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    console.log("on Destroy");
+    console.log('on Destroy');
   }
 
   validURL(str: string) {

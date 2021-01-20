@@ -1,0 +1,10 @@
+<!--<app-countdown-timer [seconds]="55"></app-countdown-timer>-->
+
+<!--<app-countdown-timer-alias [remaining-time]="55"></app-countdown-timer-alias>-->
+
+<app-rating-bar #RatingBar [max]="10" (rateChange)="onRateChange($event)"></app-rating-bar>
+
+{{ RatingBar.showRatingValue }}
+
+
+<app-pipe-demo></app-pipe-demo>

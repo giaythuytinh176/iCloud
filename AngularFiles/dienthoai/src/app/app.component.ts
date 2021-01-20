@@ -29,11 +29,11 @@ export class AppComponent {
   selectedProduct?: Product;
   mgs?: string;
 
-  setSelectProduct(p: Product) {
+  setSelectProduct(p: Product): void {
     this.selectedProduct = p;
   }
 
-  notifyMessage($event: { nameproduct: string | undefined; }) {
+  notifyMessage($event: any): void {
     console.log($event);
     this.mgs = 'Có yêu cầu đặt hàng ' + $event.nameproduct;
   }
