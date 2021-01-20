@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup | undefined;
+  loginForm!: FormGroup;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
