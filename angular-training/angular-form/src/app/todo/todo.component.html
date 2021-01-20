@@ -8,9 +8,9 @@
 
   <ul>
     <li (click)="toggleTodo(i)"
-        [class.complete]="todo.complete"
-        *ngFor="let todo of todos; index as i">
-         {{todo.content}}
+      [class.complete]="todo.complete"
+      *ngFor="let todo of todos; index as i">
+        {{todo.content}}
     </li>
   </ul>
 </div>
