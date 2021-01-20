@@ -33,7 +33,7 @@ export class TodoComponent implements OnInit {
     }
   }
 
-  toggleTodo(i) {
+  toggleTodo(i: any) {
     this.todos[i].complete = !this.todos[i].complete;
   }
 

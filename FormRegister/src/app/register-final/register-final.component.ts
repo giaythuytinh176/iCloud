@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 function comparePassword(c: AbstractControl) {
   const v = c.value;
-    return (v.password === v.confirmPassword) ? null : {
+  return (v.password === v.confirmPassword) ? null : {
       passwordnotmatch: true
     };
 }
@@ -12,7 +12,7 @@ function comparePassword(c: AbstractControl) {
   styleUrls: ['./register-final.component.scss']
 })
 export class RegisterFinalComponent implements OnInit {
-  registerForm: FormGroup;
+  registerForm?: FormGroup;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {

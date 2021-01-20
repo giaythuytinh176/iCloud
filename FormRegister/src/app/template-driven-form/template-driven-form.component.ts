@@ -19,7 +19,7 @@ export class TemplateDrivenFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(profileForm) {
+  onSubmit(profileForm: any) {
     console.log(profileForm);
     // unhandle exception
     // throw new Error('Something went wrong');

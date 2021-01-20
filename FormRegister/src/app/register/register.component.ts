@@ -12,7 +12,7 @@ function comparePassword(c: AbstractControl) {
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  registerForm: FormGroup;
+  registerForm?: FormGroup;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {

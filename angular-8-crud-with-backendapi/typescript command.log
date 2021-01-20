@@ -1,0 +1,54 @@
+01. Tạo project type script mới
+https://www.digitalocean.com/community/tutorials/typescript-new-project
+
+step 01
+	mkdir typescript-project
+	cd typescript-project
+	npm i typescript --save-dev
+	npx tsc --init
+
+
+Typescript
+
+tsc --target es6
+
+
+// typescript: error TS2693: 'Promise' only refers to a type, but is being used as a value here
+
+Encounter the same error today and solved it with:
+
+npm i --save-dev  @types/es6-promise
+Update:
+
+add:
+
+import {Promise} from 'es6-promise'
+
+
+==========
+
+Cannot find name 'require'. Do you need to install type definitions for node? Try `npm i @types/node`
+
+Install it with npm,
+
+npm install xmlhttprequest
+Now you can require it in your code.
+
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var xhr = new XMLHttpRequest();
+
+
+npm install --save cross-fetch
+import fetch from 'cross-fetch';
+
+
+//==================
+// Angular js
+//==================
+
+
+Lợi ích của angular?
+- binding 2 chiều
+- compoment
+- derective
+- DI

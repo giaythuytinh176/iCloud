@@ -1,0 +1,9 @@
+1. upload image - demo
+https://academind.com/tutorials/angular-image-upload-made-easy/
+
+2. Tìm hiểu code demo (Laravel)
+JWT - Json Web Token
+https://developers.facebook.com/docs/graph-api/explorer/
+
+3. Bài tập Jame
+

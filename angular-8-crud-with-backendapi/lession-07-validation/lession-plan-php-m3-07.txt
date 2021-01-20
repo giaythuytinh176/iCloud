@@ -1,0 +1,9 @@
+- Tổng hợp kiến thức: 10 phút
+- Giới thiệu lý thuyết 20 phút - hỏi đáp
+- Chữa quiz: 5 phút - 7 phút
+- Demo Validate form mẫu - 20 phút
+- Demo custome validation - 10 phút
+- Overview lại bài học 10 phút
+- Demo mở rộng 1 chức năng ghép vào project
+
+Tổng 60 phút (còn thừa 10 phút)

@@ -1,0 +1,38 @@
+laravel
+
+jwt
+3 thành phần
+	+
+	+
+	+
+image upload angular
+	https://www.freecodecamp.org/news/how-to-make-image-upload-easy-with-angular-1ed14cb2773b/
+
+setup jwt cho laravel
+step 01. 
+	composer require tymon/jwt-auth:dev-develop --prefer-source
+
+step 02.
+	Open config/app.php and add the following provider to the providers array:
+
+    [...]
+    Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+    [...]
+
+step 03.
+	Add the following facades to the aliases array:
+
+    [...]
+    'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class, 
+    'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+    [...]
+
+steop 04.
+	You need to publish the config file for JWT using the following command:
+
+    $ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+step 05.
+	When that is done, set the jwt-auth secret by running the following command:
+
+    $ php artisan jwt:secret
