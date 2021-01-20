@@ -1,0 +1,54 @@
+<main class="container">
+  <div class="bg-light p-5 rounded">
+    <h1> Lession 03: Angular Overview
+      <span class="btn btn-primary">{{ title }} app is running!</span>
+    </h1>
+
+    <!-- ########## Example 01 change font size ########## -->
+    <p>
+      <!-- <input type="number" [value]="fontSize" (change)="onChange($event.target.value)" /> -->
+      <!-- <input type="number" [value]="fontSize" onChange='{(event) =>  this.setState({ value: event.target.value })}' /> -->
+    </p>
+
+    <p class="output" [style.fontSize.px]="fontSize">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam
+      debitis, tempore error voluptatem explicabo ipsum?
+    </p>
+    <hr />
+
+    <!-- ########## Example 02 If ########## -->
+    <div>
+      <span *ngIf="isavailable; then condition1 else condition2">
+        Condition is valid.
+      </span>
+      <ng-template #condition1>Condition is valid</ng-template>
+      <ng-template #condition2>Condition is invalidddddddddd</ng-template>
+    </div>
+    <hr />
+
+    <!-- ########## Example 03 Loop ########## -->
+    <form class="needs-validation">
+      <label for="firstName" class="form-label">Months: </label>
+      <select class="form-control">
+        <option *ngFor="let i of months">{{i}}</option>
+      </select>
+    </form>
+
+    <!-- ########## Example 04 Event ########## -->
+    <p></p>
+    <button class="btn btn-warning" (click)="myClickFunction($event)">
+      Click Me
+    </button>
+  </div>
+
+  <!-- ########## Example 05 call component ########## -->
+  <app-check-all></app-check-all>
+
+  <!-- ########## Example 06 hacker new-articles ########## -->
+  <app-hacker-new></app-hacker-new>
+</main>
+
+<div class="bg-light p-5 rounded">
+  <!-- <footer class="container"></footer> -->
+  <p class="text-center">footer</p>
+</div>

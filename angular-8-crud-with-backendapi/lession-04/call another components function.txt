@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/37587732/how-to-call-another-components-function-in-angular2
+https://stackoverflow.com/a/54245245/4506775

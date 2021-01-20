@@ -42,7 +42,7 @@ export class RatingBarComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    console.log(this.ratingUnits);
+     console.log(this.ratingUnits);
     this.calculate(this.max, this.ratingValue);
   }
 
