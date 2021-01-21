@@ -1,7 +1,7 @@
-import { EmployeeService } from '../employee.service';
-import { Employee } from '../employee';
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {EmployeeService} from '../employee.service';
+import {Employee} from '../employee';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-create-employee',
@@ -15,7 +15,8 @@ export class CreateEmployeeComponent implements OnInit {
   error_msg = '';
 
   constructor(private employeeService: EmployeeService,
-    private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit() {
   }
@@ -25,10 +26,11 @@ export class CreateEmployeeComponent implements OnInit {
     this.employee = new Employee();
   }
 
-  save() {
+  save(): void {
     this.employeeService
-      .createEmployee(this.employee).subscribe((data: any) => {
-        if (data.status != undefined && data.status != 'undefined') {
+      .createEmployee(this.employee)
+      .subscribe((data: any) => {
+        if (data.status !== undefined && data.status !== 'undefined') {
           if (data.status.includes('Authorization Token not found')) {
             this.error_msg = 'Authorization Token not found';
           } else if (data.status.includes('Token is Invalid')) {
@@ -37,17 +39,17 @@ export class CreateEmployeeComponent implements OnInit {
         }
 
         this.employee = new Employee();
-        // this.gotoList();
+        this.gotoList();
       },
-        (error: any) => console.log(error));
+      (error: any) => console.log(error));
   }
 
-  onSubmit() {
+  onSubmit(): void {
     this.submitted = true;
     this.save();
   }
 
-  gotoList() {
+  gotoList(): void {
     this.router.navigate(['/employees']);
   }
 }

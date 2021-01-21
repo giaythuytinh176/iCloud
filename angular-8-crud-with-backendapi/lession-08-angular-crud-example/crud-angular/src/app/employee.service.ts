@@ -36,7 +36,6 @@ export class EmployeeService {
   }
 
   deleteEmployee(id: number): Observable<any> {
-
     return this.http.delete(`${this.baseUrl}/${id}`, { headers: this.reqHeader });
   }
 

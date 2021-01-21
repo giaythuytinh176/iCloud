@@ -1,32 +1,32 @@
 import { EmployeeDetailsComponent } from '../employee-details/employee-details.component';
-import { Observable } from "rxjs";
-import { EmployeeService } from "../employee.service";
-import { Employee } from "../employee";
-import { Component, OnInit } from "@angular/core";
+import { Observable } from 'rxjs';
+import { EmployeeService } from '../employee.service';
+import { Employee } from '../employee';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-employee-list",
-  templateUrl: "./employee-list.component.html",
-  styleUrls: ["./employee-list.component.css"]
+  selector: 'app-employee-list',
+  templateUrl: './employee-list.component.html',
+  styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent implements OnInit {
   employees!: Observable<Employee[]>;
   first_name!: string;
 
   constructor(private employeeService: EmployeeService,
-    private router: Router) { }
+              private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.reloadData();
   }
 
-  reloadData() {
+  reloadData(): void {
     this.employees = this.employeeService.getEmployeesList();
     // console.log(this.employees);
   }
 
-  deleteEmployee(id: number) {
+  deleteEmployee(id: number): void {
     this.employeeService.deleteEmployee(id)
       .subscribe(
         data => {
@@ -36,11 +36,11 @@ export class EmployeeListComponent implements OnInit {
         error => console.log(error));
   }
 
-  employeeDetails(id: number) {
+  employeeDetails(id: number): void {
     this.router.navigate(['details', id]);
   }
 
-  getEmployeesByName() {
+  getEmployeesByName(): void {
     console.log('here');
     this.employees = this.employeeService.getEmployeesByName(this.first_name);
   }

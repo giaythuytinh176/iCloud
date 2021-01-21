@@ -37,17 +37,20 @@ export class LoginComponent implements OnInit {
   }
 
   error(): void {
+    this.toasrt.warning('Password or email is incorrect!', 'Tải khoản hoặc mật khẩu sai!');
     // show box msg
-    this.alert = true;
-    // wait 3 Seconds and hide
-    setTimeout(function(this: any): void {
-      this.alert = false;
-      // console.log(this.edited);
-    }.bind(this), 3000);
+    // this.alert = true;
+    // // wait 3 Seconds and hide
+    // setTimeout(function(this: any): void {
+    //   this.alert = false;
+    //   // console.log(this.edited);
+    // }.bind(this), 3000);
+    // @ts-ignore
+    // this.router.navigate(['employees']);
   }
 
   success(): void {
-
+    this.toasrt.success('Login sucessfully', 'Đăng nhập thành công');
     // show box msg
     // this.alert2 = true;
     // // wait 3 Seconds and hide
@@ -55,6 +58,10 @@ export class LoginComponent implements OnInit {
     //   this.alert2 = false;
     //   // console.log(this.edited);
     // }.bind(this), 3000);
+    // @ts-ignore
+    setTimeout( () => {
+      this.router.navigate(['employees']);
+    }, 1000);
   }
 
   getToken(): void {
@@ -64,7 +71,6 @@ export class LoginComponent implements OnInit {
         // console.log(data.token);
         this.result = data.token;
         localStorage.setItem('token', data.token);
-        this.toasrt.success('Dang nhap thanh cong', 'asdfasdf');
         this.success();
       },
       error => this.error()); // console.log(error)
