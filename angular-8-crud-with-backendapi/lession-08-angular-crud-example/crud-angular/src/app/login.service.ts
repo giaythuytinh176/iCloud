@@ -17,11 +17,11 @@ export class LoginService {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
     });
-    email = 'thaotm@email.com';
-    password = '1';
+    // email = 'abcd@gmail.com';
+    // password = 'abc';
     var data = {
-      "email": email,
-      "password": password
+      'email': email,
+      'password': password
     };
     return this.http.post(`${this.baseUrl}`, data, { headers: reqHeader, responseType: 'json' });
   }

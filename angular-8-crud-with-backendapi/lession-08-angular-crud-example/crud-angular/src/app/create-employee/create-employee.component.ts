@@ -37,7 +37,7 @@ export class CreateEmployeeComponent implements OnInit {
         }
 
         this.employee = new Employee();
-        //this.gotoList();
+        // this.gotoList();
       },
         (error: any) => console.log(error));
   }

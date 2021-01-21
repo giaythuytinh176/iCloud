@@ -23,6 +23,7 @@ export class EmployeeListComponent implements OnInit {
 
   reloadData() {
     this.employees = this.employeeService.getEmployeesList();
+    // console.log(this.employees);
   }
 
   deleteEmployee(id: number) {

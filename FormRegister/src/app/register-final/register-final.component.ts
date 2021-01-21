@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-function comparePassword(c: AbstractControl) {
-  const v = c.value;
-    return (v.password === v.confirmPassword) ? null : {
-      passwordnotmatch: true
-    };
-}
+
 @Component({
   selector: 'app-register-final',
   templateUrl: './register-final.component.html',
@@ -15,12 +10,12 @@ export class RegisterFinalComponent implements OnInit {
   registerForm!: FormGroup;
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.registerForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       pwGroup: this.fb.group({
-        password: ['', [Validators.required, Validators.minLength(6)]],
-        confirmPassword: ['', [Validators.required, Validators.minLength(6)]]
+        password: ['', [Validators.required, Validators.minLength(1), Validators.maxLength(3)]],
+        confirmPassword: ['', [Validators.required, Validators.minLength(1), Validators.maxLength(3)]]
       }, {validator: comparePassword}),
       country: ['', Validators.required],
       age: ['', [Validators.required, Validators.min(18)]],
@@ -33,8 +28,14 @@ export class RegisterFinalComponent implements OnInit {
       email: 'info@example.com'
     });
   }
-  onSubmit() {
-    console.log(this.registerForm);
+  onSubmit(): void {
+    console.log(this.registerForm.value);
   }
 
+}
+function comparePassword(c: AbstractControl) {
+  const v = c.value;
+  return (v.password === v.confirmPassword) ? null : {
+    passwordnotmatch: true
+  };
 }

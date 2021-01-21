@@ -9,33 +9,35 @@ import { Observable } from 'rxjs';
 export class EmployeeService {
 
   // private baseUrl = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=98875111208701b956a9e50ee6b5d2e0';
-  //private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/employees';
+  // private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/employees';
   private baseUrl = 'http://127.0.0.1:8000/api/customers';
+  authToken!: any;
+  reqHeader!: any;
 
-  constructor(private http: HttpClient) { }
-
-
+  constructor(private http: HttpClient) {
+    this.authToken = localStorage.getItem('token');
+    this.reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json',
+      // cu phap co dau cach dang sau Bearer
+      'Authorization': 'Bearer ' + this.authToken
+    });
+  }
 
   getEmployee(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
-  createEmployee(employee: Object): Observable<Object> {
-    var auth_token = '1eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwODc3ODkwMywiZXhwIjoxNjA4NzgyNTAzLCJuYmYiOjE2MDg3Nzg5MDMsImp0aSI6ImRzNHF4dGJ2RVlrcVJMdjUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.06-jQTiw_pjSJn5jmXVrXLzEq44PW2dnhN58GVEDJk4';
-    var reqHeader = new HttpHeaders({
-      'Content-Type': 'application/json',
-      // cu phap co dau cach dang sau Bearer
-      'Authorization': 'Bearer ' + auth_token
-    });
-    return this.http.post(`${this.baseUrl}`, employee, { headers: reqHeader });
+  createEmployee(employee: object): Observable<object> {
+    return this.http.post(`${this.baseUrl}`, employee, { headers: this.reqHeader });
   }
 
-  updateEmployee(id: number, value: any): Observable<Object> {
+  updateEmployee(id: number, value: any): Observable<object> {
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 
   deleteEmployee(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
+
+    return this.http.delete(`${this.baseUrl}/${id}`, { headers: this.reqHeader });
   }
 
   getEmployeesList(): Observable<any> {
