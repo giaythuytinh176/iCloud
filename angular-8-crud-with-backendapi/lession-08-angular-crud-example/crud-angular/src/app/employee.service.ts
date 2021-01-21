@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
+import {TokenStorageService} from "./token-storage.service";
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +15,8 @@ export class EmployeeService {
   authToken!: any;
   reqHeader!: any;
 
-  constructor(private http: HttpClient) {
-    this.authToken = localStorage.getItem('token');
+  constructor(private http: HttpClient, private tokenStorage: TokenStorageService) {
+    this.authToken = tokenStorage.getToken();
     this.reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
       // cu phap co dau cach dang sau Bearer

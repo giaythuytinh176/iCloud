@@ -5,6 +5,7 @@ import {Observable} from 'rxjs';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {RootComponent} from '../root/root.component';
 import {ToastrService} from 'ngx-toastr';
+import {TokenStorageService} from "../token-storage.service";
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,11 @@ import {ToastrService} from 'ngx-toastr';
 export class LoginComponent implements OnInit {
 
   constructor(private loginService: LoginService,
-              private router: Router, private fb: FormBuilder, private toasrt: ToastrService) {
+              private router: Router,
+              private fb: FormBuilder,
+              private toasrt: ToastrService,
+              private tokenStorage: TokenStorageService
+  ) {
   }
 
   result!: Observable<any>;
@@ -70,7 +75,7 @@ export class LoginComponent implements OnInit {
         // console.log(data);
         // console.log(data.token);
         this.result = data.token;
-        localStorage.setItem('token', data.token);
+        this.tokenStorage.saveToken(data.token);
         this.success();
       },
       error => this.error()); // console.log(error)
