@@ -8,17 +8,16 @@ import { DictionaryService, IWord } from '../dictionary.service';
 })
 export class DictionaryComponent implements OnInit {
   word!: IWord;
-  wordVal!: any;
   constructor(private dictionaryService: DictionaryService) { }
 
   ngOnInit() {
   }
 
   search($event: any): void {
-    this.wordVal = $event.target.value;
-    const meaning = this.dictionaryService.search(this.wordVal);
+    const wordVal = $event.target.value;
+    const meaning = this.dictionaryService.search(wordVal);
     this.word = {
-      key: this.wordVal,
+      key: wordVal,
       meaning: meaning
     };
   }
