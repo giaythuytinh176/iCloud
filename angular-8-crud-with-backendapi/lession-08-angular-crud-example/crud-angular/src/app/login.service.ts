@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 import { Observable, BehaviorSubject } from 'rxjs';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +9,10 @@ import { Observable, BehaviorSubject } from 'rxjs';
 
 export class LoginService {
 
-  private baseUrl = 'http://127.0.0.1:8000/api/login';
-
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {
+    // tslint:disable-next-line:prefer-const
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
     });
@@ -21,7 +20,7 @@ export class LoginService {
       'email': email,
       'password': password
     };
-    return this.http.post(`${this.baseUrl}`, data, { headers: reqHeader, responseType: 'json' });
+    return this.http.post(environment.apiUrl + '/login', data, { headers: reqHeader, responseType: 'json' });
   }
 
   /*

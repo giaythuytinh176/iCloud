@@ -12,6 +12,7 @@ export class CreateEmployeeComponent implements OnInit {
 
   employee: Employee = new Employee();
   submitted = false;
+  // tslint:disable-next-line:variable-name
   error_msg = '';
 
   constructor(private employeeService: EmployeeService,

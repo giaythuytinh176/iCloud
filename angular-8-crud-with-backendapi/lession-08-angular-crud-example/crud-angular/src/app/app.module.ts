@@ -6,7 +6,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CreateEmployeeComponent} from './create-employee/create-employee.component';
 import {EmployeeDetailsComponent} from './employee-details/employee-details.component';
-import {EmployeeListComponent} from './employee-list/employee-list.component';
+import {DialogElementsExampleDialog, EmployeeListComponent} from './employee-list/employee-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UpdateEmployeeComponent} from './update-employee/update-employee.component';
 import {AboutComponent} from './pages/about/about.component';
@@ -72,7 +72,8 @@ import {OverlayModule} from '@angular/cdk/overlay';
     AboutComponent,
     ContactUsComponent,
     LoginComponent,
-    RootComponent
+    RootComponent,
+    DialogElementsExampleDialog
   ],
   imports: [
     BrowserModule,

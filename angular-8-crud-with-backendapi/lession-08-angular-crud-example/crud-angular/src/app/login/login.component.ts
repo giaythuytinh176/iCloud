@@ -59,13 +59,14 @@ export class LoginComponent implements OnInit {
     // show box msg
     // this.alert2 = true;
     // // wait 3 Seconds and hide
-    // setTimeout(function(this: any): void {
+    // setTim eout(function(this: any): void {
     //   this.alert2 = false;
     //   // console.log(this.edited);
     // }.bind(this), 3000);
     // @ts-ignore
     setTimeout( () => {
-      this.router.navigate(['employees']);
+      // this.router.navigate(['employees']);
+      window.location.href = '/index.html';
     }, 1000);
   }
 
