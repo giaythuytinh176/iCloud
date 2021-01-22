@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="decee45b-7df4-46df-a2a8-a8ac66527ccd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularFiles/prj-training" beforeDir="false" afterPath="$PROJECT_DIR$/AngularFiles/prj-training" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularFiles/prj-training/angular-component-template/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AngularFiles/prj-training/angular-component-template/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dictionary/src/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,6 +89,7 @@
       <workItem from="1611268715493" duration="643000" />
       <workItem from="1611269967540" duration="30000" />
       <workItem from="1611270305843" duration="1839000" />
+      <workItem from="1611277693941" duration="1286000" />
     </task>
     <servers />
   </component>

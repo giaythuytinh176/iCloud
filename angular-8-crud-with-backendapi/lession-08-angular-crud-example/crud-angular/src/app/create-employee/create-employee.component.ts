@@ -27,6 +27,8 @@ export class CreateEmployeeComponent implements OnInit {
   }
 
   save(): void {
+    // console.log(this.submitted);
+    console.log(this.employee);
     this.employeeService
       .createEmployee(this.employee)
       .subscribe((data: any) => {
@@ -45,6 +47,7 @@ export class CreateEmployeeComponent implements OnInit {
   }
 
   onSubmit(): void {
+    // console.log(this);
     this.submitted = true;
     this.save();
   }

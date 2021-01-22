@@ -17,6 +17,7 @@ export class EmployeeService {
 
   constructor(private http: HttpClient, private tokenStorage: TokenStorageService) {
     this.authToken = tokenStorage.getToken();
+    console.log(this.authToken);
     this.reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
       // cu phap co dau cach dang sau Bearer
@@ -29,6 +30,8 @@ export class EmployeeService {
   }
 
   createEmployee(employee: object): Observable<object> {
+    console.log(this.reqHeader);
+    console.log(employee);
     return this.http.post(`${this.baseUrl}`, employee, { headers: this.reqHeader });
   }
 

@@ -17,8 +17,6 @@ export class LoginService {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
     });
-    // email = 'abcd@gmail.com';
-    // password = 'abc';
     var data = {
       'email': email,
       'password': password

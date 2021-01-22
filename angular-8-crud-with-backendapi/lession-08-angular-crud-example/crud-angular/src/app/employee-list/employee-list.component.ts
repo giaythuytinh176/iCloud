@@ -26,14 +26,16 @@ export class EmployeeListComponent implements OnInit {
     // console.log(this.employees);
   }
 
-  deleteEmployee(id: number): void {
-    this.employeeService.deleteEmployee(id)
-      .subscribe(
-        data => {
-          console.log(data);
-          this.reloadData();
-        },
-        error => console.log(error));
+  deleteEmployee( id: number): void {
+    if (confirm('Are you sure want to delete?')) {
+      this.employeeService.deleteEmployee(id)
+        .subscribe(
+          data => {
+            console.log(data);
+            this.reloadData();
+          },
+          error => console.log(error));
+    }
   }
 
   employeeDetails(id: number): void {
