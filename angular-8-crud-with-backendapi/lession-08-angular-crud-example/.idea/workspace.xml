@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f6b86e-9509-4799-8580-682edccf6412" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/iCloud.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DictionaryExerciseModule4" beforeDir="false" afterPath="$PROJECT_DIR$/../../DictionaryExerciseModule4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/create-employee/create-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/create-employee/create-employee.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/create-employee/create-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/create-employee/create-employee.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/employee-details/employee-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/employee-details/employee-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/employee-list/dialog-elements-example-dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/employee-list/dialog-employees-delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/employee-list/employee-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/app/update-employee/update-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/app/update-employee/update-employee.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud-angular/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +64,8 @@
       <updated>1611231576967</updated>
       <workItem from="1611231578005" duration="10308000" />
       <workItem from="1611325627468" duration="3156000" />
-      <workItem from="1611359272907" duration="4193000" />
+      <workItem from="1611359272907" duration="4434000" />
+      <workItem from="1611405553760" duration="125000" />
     </task>
     <servers />
   </component>
