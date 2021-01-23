@@ -5,6 +5,7 @@ import {Employee} from '../employee';
 import {Component, Inject, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-employee-list',
@@ -17,7 +18,8 @@ export class EmployeeListComponent implements OnInit {
 
   constructor(private employeeService: EmployeeService,
               private router: Router,
-              public dialog: MatDialog
+              public dialog: MatDialog,
+              private toasrt: ToastrService,
   ) {
   }
 
@@ -31,13 +33,21 @@ export class EmployeeListComponent implements OnInit {
   }
 
   deleteEmployee(id: number): void {
-      this.employeeService.deleteEmployee(id)
-        .subscribe(
-          data => {
-            console.log(data);
+    this.employeeService.deleteEmployee(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          if ((data.status || []).indexOf('Token is Invalid') !== -1) {
+            this.toasrt.warning(data.status, 'Error happing while deleting!');
+          } else {
             this.reloadData();
-          },
-          error => console.log(error));
+            this.toasrt.success('Deleted successfully', 'Xoá thành công');
+          }
+        },
+        error => {
+          console.log(error);
+          this.toasrt.warning('Có lỗi xảy ra, không thể xoá được file.', 'Error happing while deleting!');
+        });
   }
 
   employeeDetails(id: number): void {
@@ -50,7 +60,7 @@ export class EmployeeListComponent implements OnInit {
   }
 
   openDialog(id: number, firstName: string, lastName: string): void {
-    const dialogRef = this.dialog.open(DialogElementsExampleDialog, {
+    const dialogRef = this.dialog.open(DialogEmployeeDelete, {
       data: {id: id, firstName: firstName, lastName: lastName}
     });
     dialogRef.afterClosed().subscribe(result => {
@@ -68,13 +78,13 @@ export class EmployeeListComponent implements OnInit {
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'dialog-elements-example-dialog',
-  templateUrl: './dialog-elements-example-dialog.html',
+  selector: 'dialog-employees-delete',
+  templateUrl: 'dialog-employees-delete.html',
 })
 // tslint:disable-next-line:component-class-suffix
-export class DialogElementsExampleDialog {
+export class DialogEmployeeDelete {
   constructor(
-    public dialogRef: MatDialogRef<DialogElementsExampleDialog>,
+    public dialogRef: MatDialogRef<DialogEmployeeDelete>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData
   ) {
     // console.log(this.data);

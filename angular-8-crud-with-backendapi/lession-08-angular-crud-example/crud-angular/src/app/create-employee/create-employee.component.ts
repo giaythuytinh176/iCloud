@@ -2,6 +2,7 @@ import {EmployeeService} from '../employee.service';
 import {Employee} from '../employee';
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-create-employee',
@@ -16,7 +17,9 @@ export class CreateEmployeeComponent implements OnInit {
   error_msg = '';
 
   constructor(private employeeService: EmployeeService,
-              private router: Router) {
+              private router: Router,
+              private toasrt: ToastrService
+  ) {
   }
 
   ngOnInit() {
@@ -33,18 +36,26 @@ export class CreateEmployeeComponent implements OnInit {
     this.employeeService
       .createEmployee(this.employee)
       .subscribe((data: any) => {
-        if (data.status !== undefined && data.status !== 'undefined') {
-          if (data.status.includes('Authorization Token not found')) {
-            this.error_msg = 'Authorization Token not found';
-          } else if (data.status.includes('Token is Invalid')) {
-            this.error_msg = 'Token is Invalid';
+          if (data.status !== undefined && data.status !== 'undefined') {
+            if (data.status.includes('Authorization Token not found')) {
+              this.error_msg = 'Authorization Token not found';
+            } else if (data.status.includes('Token is Invalid')) {
+              this.error_msg = 'Token is Invalid';
+            }
           }
-        }
-
-        this.employee = new Employee();
-        this.gotoList();
-      },
-      (error: any) => console.log(error));
+          // console.log(this.error_msg);
+          if (this.error_msg) {
+            this.toasrt.warning(this.error_msg, 'Error happing while adding!');
+          } else {
+            this.employee = new Employee();
+            this.toasrt.success('Added successfully', 'Thêm thành công');
+            setTimeout(() => {
+              // this.router.navigate(['employees']);
+              this.gotoList();
+            }, 1000);
+          }
+        },
+        (error: any) => console.log(error));
   }
 
   onSubmit(): void {

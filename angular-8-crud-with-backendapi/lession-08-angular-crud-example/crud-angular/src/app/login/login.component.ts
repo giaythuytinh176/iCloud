@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
   }
 
   success(): void {
-    this.toasrt.success('Login sucessfully', 'Đăng nhập thành công');
+    this.toasrt.success('Login successfully', 'Đăng nhập thành công');
     // show box msg
     // this.alert2 = true;
     // // wait 3 Seconds and hide
