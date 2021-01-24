@@ -20,31 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decee45b-7df4-46df-a2a8-a8ac66527ccd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-create/english-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-create/english-create.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-create/english-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-create/english-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-list/english-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-list/english-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-list/english-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-list/english-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/service/english.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/service/english.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/service/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/service/english.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-8-crud-with-backendapi/lession-08-angular-crud-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/angular-8-crud-with-backendapi/lession-08-angular-crud-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-8-crud-with-backendapi/lession-08-angular-crud-example/crud-angular/src/app/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-8-crud-with-backendapi/lession-08-angular-crud-example/crud-angular/src/app/employee-list/employee-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/vietnamese-create/vietnamese-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/vietnamese-create/vietnamese-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/vietnamese-list/vietnamese-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/vietnamese-list/vietnamese-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DictionaryExerciseModule4" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nMDXYypOpHm3y86xHV5up2Ka5p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -57,8 +50,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DictionaryExerciseModule4/frontend/src/app/backend/component/english-list" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -121,7 +115,8 @@
       <workItem from="1611370234124" duration="99000" />
       <workItem from="1611389185109" duration="3066000" />
       <workItem from="1611393051031" duration="6452000" />
-      <workItem from="1611405700473" duration="9487000" />
+      <workItem from="1611405700473" duration="9661000" />
+      <workItem from="1611504563293" duration="33000" />
     </task>
     <servers />
   </component>
